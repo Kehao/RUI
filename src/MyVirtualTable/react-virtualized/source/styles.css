@@ -1,0 +1,296 @@
+/* Collection default theme */
+
+.ReactVirtualized__Collection {
+}
+
+.ReactVirtualized__Collection__innerScrollContainer {
+}
+
+/* Grid default theme */
+
+.ReactVirtualized__Grid {
+}
+
+.ReactVirtualized__Grid__innerScrollContainer {
+}
+
+/* Table default theme */
+
+.ReactVirtualized__Table {
+}
+
+/* popover */
+.ReactVirtual__Popover {
+    right: 0px !important;
+    left: 200px !important;
+    padding-top: 0px !important; 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    /* fixed cover modal bug */
+    z-index: 1000 !important;
+}
+.ReactVirtual__Popover .ant-popover-arrow {
+    display: none;
+}
+.ReactVirtual__Popover .ant-popover-inner-content {
+    padding: 0px !important;
+}
+/* popover */
+
+.ReactVirtualized__Table__Grid {
+}
+.ReactVirtual__popover__container{
+    /* max-width: 600px; */
+    max-height: 200px;
+    overflow: scroll;
+}
+.ReactVirtualized__Table__headerRow {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ReactVirtualized__Table__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ReactVirtualized__Table__headerTruncatedText {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.ReactVirtualized__Table__headerColumn,
+.ReactVirtualized__Table__rowColumn {
+    padding-right: 10px;
+    min-width: 0px;
+}
+
+.ReactVirtualized__Table__rowColumn {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ReactVirtualized__Table__headerColumn:first-of-type {
+    padding-left: 10px;
+}
+.ReactVirtualized__Table__rowColumn:first-of-type {
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+.ReactVirtualized__Table__headerColumn:last-of-type,
+.ReactVirtualized__Table__rowColumn:last-of-type {
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+.ReactVirtualized__Table__sortableHeaderColumn {
+    cursor: pointer;
+}
+
+.ReactVirtualized__Table__sortableHeaderIconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.ReactVirtualized__Table__sortableHeaderIcon {
+    flex: 0 0 24px;
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+}
+
+/* List default theme */
+
+.ReactVirtualized__List {
+}
+
+/* customer style*/
+.ReactVirtual__Table__container {
+    position: relative;
+}
+
+.ReactVirtual__Table__container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ReactVirtual__Table_left, .ReactVirtual__Table_right {
+    position: absolute;
+    background: white;
+    z-index: 100;
+}
+
+.ReactVirtual__Table_right {
+    top: 0;
+    right: 0;
+}
+
+.ReactVirtual__Table_right .ReactVirtualized__Grid__innerScrollContainer{
+    transition-property: scroll-top;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.ReactVirtual__Table_left ::-webkit-scrollbar, .ReactVirtual__Table_right ::-webkit-scrollbar {
+    display: none;
+}
+
+.ReactVirtual__Table_left .ReactVirtualized__Table__Grid, .ReactVirtual__Table_right .ReactVirtualized__Table__Grid {
+
+    /* overflow: hidden !important; */
+}
+
+.ReactVirtualized__Grid__innerScrollContainer {
+    width: 100% !important;
+    overflow: visible !important;
+}
+
+.ReactVirtualized__Table__row {
+    /* width: 100% !important; */
+    min-width: 100% !important;
+}
+
+.ReactVirtualized__Table__row:hover {
+    background: rgba(24,143,242,0.15);
+}
+.ReactVirtualized__ExpandedRow{
+    background-color: #B1EDC7 !important;
+}
+.ReactVirtualized__Row__selected {
+    /* background-color: #D1E8FC !important; */
+    background-color: #B1EDC7 !important;
+}
+
+/*列表标红*/
+.ReactVirtualized__Row__red {
+    /* background-color: #D1E8FC !important; */
+   color: red;
+}
+
+.ReactVirtual__Table__pagination {
+    float: right;
+    margin-top: 5px;
+}
+
+.ReactVirtualized__Table__row:focus {
+    outline: none;
+}
+
+.ReactVirtualized__Table__headerRow {
+    width: 100% !important;
+}
+
+.ReactVirtualized__Table__Grid {
+    width: 100% !important;
+    overflow: auto !important;
+}
+
+.ReactVirtualized__Table__Grid:focus {
+    outline: none;
+}
+
+.ReactVirtualized__Table__headerColumn:focus {
+    outline: none;
+}
+
+.table_head_style {
+    background: #5A6A82 !important;
+    color: #fff !important;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    height: 100%;
+}
+
+.ReactVirtual_form-row-odd {
+    background: #fff;
+}
+
+.ReactVirtual_form-row-noodd {
+    background: #eaeaef;
+}
+
+.ReactVirtual__expandedRow__icon {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #595959;
+    cursor: pointer;
+    background:#fff;
+}
+
+.ReactVirtual_form_hover_background {
+    /* background: #fce2b3 !important; */
+    background:rgba(24,143,242,15%) !important;
+}
+
+.ReactVirtual__Table_left {
+    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.ReactVirtual__Table_right {
+    box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.ReactVirtualized__Table__headerRow {
+    line-height: 30px !important;
+}
+.ReactVirtual__Table__Search__Header__Warpper{
+    height:100%;
+    position: relative;
+}
+
+.ReactVirtual__Table__Search__Header__Warpper .ReactVirtualized__Table__headerColumn:first-of-type {
+    /* padding-left: 0px; */
+}
+.ReactVirtualized__Table__rowColumn {
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+}
+.ReactVirtual__Table__Search__Header__Label{
+    /* width:calc(100% - 20px); */
+    overflow: hidden;
+    /* line-height: 30px; */
+    /* display: inline-block */
+}
+.ReactVirtualized__Table__headerRow .table_head_style {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.ReactVirtual__Table__Search__Header__Search{
+    height:30px;
+    width:20px;
+    /* display:inline-block; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align:center;
+    color:#fff;
+    line-height:30px;
+    float:right;
+    cursor:pointer;
+}
+
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  bottom: 0;
+  right: -5px;
+  cursor: col-resize;
+  z-index: 1;
+}

@@ -1,0 +1,217 @@
+:global(.big_wrap){
+  overflow: hidden;
+  position: relative;
+  height: 464px;
+  img{
+    cursor: move;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.img_box{
+  display: inline-block;
+  position: relative;
+  width:60px;
+  height: 60px;
+  margin: 0 10px 10px 0;
+  &:hover{
+    .img_mask{
+      height: 100%;
+    }
+  }
+  .img_mask{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    transition: height 0.3s;
+  }
+  .img_item{
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+.viewPicModal {
+  .myModal_content{
+    background:rgba(187, 198, 215, 1);
+    padding: 8px;
+  }
+  .myModal_content>div{
+    background:#fff;
+  }
+  :global{
+    .ant-modal-body{
+      max-height: 70vh;
+      overflow: auto;
+      padding:0;
+    }
+  }
+  .back{
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    cursor: pointer;
+    line-height: 18px;
+    width: 60px;
+    border-right: 2px solid rgba(0,0,0,.4);
+  }
+  .right{
+    height: 596px;
+    position: relative;
+    >div{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      >span{
+        padding-left:20px;
+        margin-bottom: 8px;
+      }
+    }
+    .title{
+      margin-top: 6px;
+      width: 120px;
+      line-height: 24px;
+      background: #0072D8;
+      color: #fff;
+      border-radius:0px 2px 2px 0px;
+    }
+    textarea{
+      width: 95%;
+    }
+
+    .button{
+      border-top: 2px solid rgba(0,0,0,.2);
+      display: flex;
+      justify-content: space-around;
+      padding: 6px 50px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  .left{
+    overflow: hidden;
+    height: 580px;
+    border-radius: 4px;
+    .carl_big{
+      border-radius: 4px;
+      transition:height 0.15s ease-out;
+      padding: 0 60px;
+      position: relative;
+      min-height: 464px;
+      overflow: hidden;
+      :global{
+        .ant-carousel{
+          height: 100%;
+          background: #ffffff;
+        }
+        .anticon{
+          // background: #000;
+          color:rgb(139,139,139);
+          font-size: 60px;
+          position: absolute;
+          top: 40%;
+          padding:40px 0;
+        }
+      }
+    }
+    
+    .func_bar{
+      border-top: 2px solid rgba(0,0,0,.2);
+      border-bottom: 2px solid rgba(0,0,0,.2);
+      height: 29px;
+      background: rgba(0,0,0,.09);
+      display:flex;
+      justify-content: center;
+      >.icon{
+        padding: 0 15px;
+      }
+      img{
+        padding: 5px;
+        width: 34px;
+        height: 24px;
+      }
+      .anticon{
+        margin-right: 6px;
+      }
+      .icon_left{
+        padding-left: 15px;
+      }
+      .icon_right{
+        padding-right: 15px;
+      }
+      .icon, .anticon{
+        cursor: pointer;
+      }
+      .size .icon{
+        display: inline-block;
+        height: 100%;
+      }
+      .size .icon_left{
+        padding-right: 3px;
+      }
+      .size .icon_right{
+        padding-left: 3px;
+      }
+      .icon:hover{
+        background: rgba(0,0,0,.09);
+      }
+
+    }
+    .carl_small{
+      padding: 0 34px;
+      position: relative;
+      height: 88px;
+      .ant_carousel{
+        height: 100%;
+      }
+      span{
+        line-height: 2;
+        font-size:34px;
+        position: absolute;
+        top: 10px;
+        border-radius:2px;
+        color:rgb(139,139,139);
+      }
+      span:hover{
+        background: rgba(0,0,0,.09)
+      }
+      .span_right{
+        right: 2px;
+      }
+      .span_left{
+        left: 2px;
+      }
+      .small_list{
+        .small_img{
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          border: 1px solid rgba(0,0,0,.4);
+          margin:14px 16px 14px 0;
+          cursor: pointer;
+        }
+        .checked_img{
+          border: 2px solid #0072D8 !important;
+        }
+        #checked{
+          border: 2px solid #0072D8 !important;
+        }
+        .small_img:last-child{
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+}
